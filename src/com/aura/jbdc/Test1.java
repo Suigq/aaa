@@ -11,32 +11,31 @@ import com.aura.entity.Student;
 
 public class Test1{
 	 StudentDao Student=new StudentDaoImpl();
-	//Ôö¼Ó
+	//å¢åŠ 
 	@Test
 	public void  test1() {
-		boolean flag1=Student.addStudent(new Student(1,"ÕÅÈı","ÄĞ"));
-		System.out.println(flag1?"Ìí¼Ó³É¹¦":"Ìí¼ÓÊ§°Ü");
-		boolean flag2=Student.addStudent(new Student(2,"ÀîËÄ","ÄĞ"));
-		System.out.println(flag2?"Ìí¼Ó³É¹¦":"Ìí¼ÓÊ§°Ü");
-		System.out.println("aa");
+		boolean flag1=Student.addStudent(new Student(1,"å¼ ä¸‰","ç”·"));
+		System.out.println(flag1?"æ·»åŠ æˆåŠŸ":"æ·»åŠ å¤±è´¥");
+		boolean flag2=Student.addStudent(new Student(2,"æå››","ç”·"));
+		System.out.println(flag2?"æ·»åŠ æˆåŠŸ":"æ·»åŠ å¤±è´¥");
 	}
-	//²éÑ¯
+	//æŸ¥è¯¢
 	@Test
 	public void test2() {
 		List<Student>list=Student.selStudent();
 		System.out.println(list);
 	}
-	//¸ü¸Ä
+	//æ›´æ”¹
 	@Test
 	public void test3() {
-		int n=Student.updateStudent(new Student(2,"ÀîËÄ","Å®"));
-		System.out.println(n!=0?"ĞŞ¸Ä³É¹¦":"ĞŞ¸ÄÊ§°Ü");
+		int n=Student.updateStudent(new Student(2,"æå››","å¥³"));
+		System.out.println(n!=0?"ä¿®æ”¹æˆåŠŸ":"ä¿®æ”¹å¤±è´¥");
 	}
-	//É¾³ı
+	//åˆ é™¤
 	@Test
 	public void test4(){
 		int n= Student.delStudent(1);
-		System.out.println(n!=0?"É¾³ı³É¹¦":"É¾³ıÊ§°Ü");
+		System.out.println(n!=0?"åˆ é™¤æˆåŠŸ":"åˆ é™¤å¤±è´¥");
 	}
 	
 }
