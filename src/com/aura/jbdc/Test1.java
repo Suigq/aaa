@@ -18,7 +18,6 @@ public class Test1{
 		System.out.println(flag1?"添加成功":"添加失败");
 		boolean flag2=Student.addStudent(new Student(2,"李四","男"));
 		System.out.println(flag2?"添加成功":"添加失败");
-		System.out.println("aa");
 	}
 	//查询
 	@Test
